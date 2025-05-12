@@ -1,0 +1,28 @@
+
+services:
+  unisystem.api:
+    image: unisystemapiimage
+    container_name: unisystemcontainer
+    networks:
+      - unisystem-network
+    build:
+      context: .
+      dockerfile: UniSystem.API/Dockerfile
+
+   
+
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      - unisystem-network
+    volumes:
+      - sqlserver_volume:/var/opt/mssql
+      
+networks:
+  unisystem-network:
+    external: true
+  
+
+volumes:
+  sqlserver_volume:

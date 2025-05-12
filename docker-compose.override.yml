@@ -1,0 +1,24 @@
+services:
+  unisystem.api:
+    image: unisystemapiimage
+    ports:
+    - "5010:8080"
+    container_name: unisystemcontainer
+    build:
+      context: .
+      dockerfile: UniSystem.API/Dockerfile
+
+  sqlserver:
+    
+    environment:
+    - ACCEPT_EULA=Y
+    - MSSQL_SA_PASSWORD=Password12*
+    volumes:
+    - sqlserver_volume:/var/opt/mssql
+    ports:
+    - "1433:1433"
+  
+
+ 
+
+    
