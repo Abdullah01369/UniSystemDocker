@@ -13,7 +13,7 @@ namespace WorkerService
     {
         private readonly IEmailServiceClient _emailSenderService;
         private readonly ILogger<EmailSenderWorker> _logger;
-        private readonly RabbitMqClientServices _rabbitMQServices; // Doğru türde değişken tanımı
+        private readonly RabbitMqClientServices _rabbitMQServices;
         private readonly IServiceProvider _serviceProvider;
         private IModel _channel;
 
