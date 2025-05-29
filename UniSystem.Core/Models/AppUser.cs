@@ -29,6 +29,7 @@ namespace UniSystem.Core.Models
         public ICollection<ProjectStudent> ProjectStudents { get; set; }
         public ICollection<Project> Projects { get; set; }
         public ICollection<GradutedStatusStudent> GradutedStatusStudents { get; set; }
+        public ICollection<Internship>  Internships { get; set; }
 
 
     }

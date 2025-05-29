@@ -67,7 +67,7 @@ artifacts/
 ScaffoldingReadMe.txt
 
 # Uygulama ayar dosyaları (şifre içeriyor olabilir)
-appsettings*.json
+# appsettings*.json   
 
 
 

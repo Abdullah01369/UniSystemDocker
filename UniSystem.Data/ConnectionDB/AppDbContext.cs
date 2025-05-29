@@ -35,6 +35,7 @@ namespace UniSystem.Data.ConnectionDB
         public DbSet<AcademicianProject> AcademicianProjects { get; set; }
         public DbSet<ProjectStudent> ProjectStudents { get; set; }
         public DbSet<GradutedStatusStudent>  GradutedStatusStudents { get; set; }
+        public DbSet<Internship>   Internships { get; set; }
 
 
 
